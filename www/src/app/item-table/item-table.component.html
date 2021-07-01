@@ -1,0 +1,35 @@
+
+<h1>Agrar-Aktionen</h1>
+
+<table id="items">
+    <thead>
+        <tr>
+            <th>Artikelbezeichnung</th>
+            <th>Artikelnummer</th>
+            <th>Beschreibungsfeld</th>
+            <th>Bild</th>
+            <th>Deep-Link</th>
+            <th>EAN</th>
+            <th>Kategoriepfad</th>
+            <th>Verfügbarkeit</th>
+            <th>Versandkosten</th>
+            <th>Bruttopreis</th>
+            <th>Stattpreis</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of items" (click)="clicked(item)">
+            <td>{{item.artikelbezeichnung}}</td>
+            <td>{{item.artikelnummer}}</td>
+            <td>{{item.beschreibungsfeld}}</td>
+            <td><img src={{item.bildLink}}></td>
+            <td>{{item.deeplink}}</td>
+            <td>{{item.ean}}</td>
+            <td>{{item.kategoriepfad}}</td>
+            <td>{{item.verfuegbarkeit}}</td>
+            <td>{{item.versandkosten}}</td>
+            <td *ngFor="let price of item.prices">{{price.bruttopreis}}</td>
+            <td *ngFor="let price of item.prices">{{price.stattpreis}}</td>
+        </tr>
+    </tbody>
+</table>

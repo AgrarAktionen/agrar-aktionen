@@ -1,0 +1,35 @@
+h1
+{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #4CAF50;
+}
+
+#items {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #items td, #users th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #items tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #items tr:hover {background-color: #ddd;}
+  
+  #items th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+  .logo {
+    display: block;
+    margin-left: auto;
+    width: 10%;
+    height: 10%
+  }

@@ -1,0 +1,5 @@
+PUT http://localhost:8080/api/item/itemInsert
+Accept: application/json
+###
+PUT http://localhost:8080/api/price/priceInsert
+Accept: application/json
